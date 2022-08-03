@@ -2,18 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   <title>Time Tracking Dashboard</title>
 </head>
 <body>
+  <header class="header">
+    <div class="profile">
+      <div class="pfp">
+        <img src="images/image-jeremy.png">
+      </div>
 
+      <div class="name">
+        <span>Report for</span>
+        <h2>Jeremy Robson</h2>
+      </div>
+    </div>
+
+    <div class="timeframes">
+      <button class="timeframe active">Daily</button>
+      <button class="timeframe">Weekly</button>
+      <button class="timeframe">Monthly</button>
+    </div>
+  </header>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <script src="app.js"></script>
 </body>
 </html>
