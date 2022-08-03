@@ -40,7 +40,7 @@ body {
 h2 {
     font-weight: 300;
     margin: 0vw;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 span {
@@ -115,7 +115,7 @@ span {
     background-repeat: no-repeat;
     background-size: auto;
     background-position: 58vw -4vw;
-    background-origin:padding-box;
+    background-origin: padding-box;
 }
 
 .work {
@@ -125,22 +125,27 @@ span {
 
 .play {
     background-image: url(images/icon-play.svg);
+    background-color: var(--clr-soft-blue-play);
 }
 
 .study {
     background-image: url(images/icon-study.svg);
+    background-color: var(--clr-light-red-study);
 }
 
 .exercise {
     background-image: url(images/icon-exercise.svg);
+    background-color: var(--clr-lime-green-exercise);
 }
 
 .social {
     background-image: url(images/icon-social.svg);
+    background-color: var(--clr-violet-social);
 }
 
 .self-care {
     background-image: url(images/icon-self-care.svg);
+    background-color: var(--clr-soft-orange-self-care);
 }
 
 .section-container {
@@ -186,11 +191,16 @@ span {
     align-items: center;
 }
 
-.present span {
-    font-size: 1.6em
+.present {
+    opacity: 0.9;
 }
 
-.past span {
+.present-time {
+    font-size: 1.6em;
+}
+
+.past-time {
     font-size: 0.8em;
     color: var(--clr-pale-blue);
+    font-weight: 300;
 }
