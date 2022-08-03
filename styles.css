@@ -106,3 +106,91 @@ span {
 .active {
     color: var(--clr-white);
 }
+
+.section {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4vw 4vw 6vw 6vw;
+    margin: 8vw 0vw 0vw 0vw;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 58vw -4vw;
+    background-origin:padding-box;
+}
+
+.work {
+    background-image: url(images/icon-work.svg);
+    background-color: var(--clr-light-red-work);
+}
+
+.play {
+    background-image: url(images/icon-play.svg);
+}
+
+.study {
+    background-image: url(images/icon-study.svg);
+}
+
+.exercise {
+    background-image: url(images/icon-exercise.svg);
+}
+
+.social {
+    background-image: url(images/icon-social.svg);
+}
+
+.self-care {
+    background-image: url(images/icon-self-care.svg);
+}
+
+.section-container {
+    background-color: var(--clr-dark-blue);
+    margin: 10vw 0vw 0vw 0vw;
+    border-radius: 4vw;
+    padding: 6vw;
+    cursor: pointer;
+    transition: var(--transition);
+} 
+
+.section-container:hover {
+    background-color: hsl(235, 46%, 25%);
+}
+
+.section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-header span {
+    font-weight: 400;
+}
+
+.ellipses-icon {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    transition: var(--transition);
+} 
+
+.ellipses-icon:hover {
+    filter: brightness(0) invert(1);
+}
+
+.section-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2vw 0vw 0vw 0vw;
+    align-items: center;
+}
+
+.present span {
+    font-size: 1.6em
+}
+
+.past span {
+    font-size: 0.8em;
+    color: var(--clr-pale-blue);
+}
