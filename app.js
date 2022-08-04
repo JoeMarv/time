@@ -118,6 +118,7 @@ const daily = document.querySelector('.daily')
 const weekly = document.querySelector('.weekly')
 const monthly = document.querySelector('.monthly')
 
+
 btns.forEach(function(btn) {
     btn.addEventListener('click', function() {
         btns.forEach(function(item) {
@@ -127,28 +128,31 @@ btns.forEach(function(btn) {
         })
 
         btn.classList.add('active')
-        console.log(daily.classList);
-        console.log(weekly.classList)
-        console.log(monthly.classList)
     })
 })
 
 
 
 window.addEventListener('DOMContentLoaded', function() {
-    if (daily.classList.contains('active') && !weekly.classList.contains('active') && !monthly.classList.contains('active')) {
-        displayDailyTime(stats)
-    }
-
-    if(!daily.classList.contains('active') && weekly.classList.contains('active') && !monthly.classList.contains('active')) {
-        displayWeeklyTime(stats)
-    }
-
-    if(!daily.classList.contains('active') && !weekly.classList.contains('active') && monthly.classList.contains('active')) {
-        displayMonthlyTime(stats)
-    }
+  displayDailyTime(stats)
 })
 
+
+btns.forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    if(daily.classList.contains('active')) {
+      displayDailyTime(stats)
+    }
+
+    else if(weekly.classList.contains('active')) {
+      displayWeeklyTime(stats)
+    }
+
+    else {
+      displayMonthlyTime(stats)
+    }
+  })
+})
 
 
 
