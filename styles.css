@@ -212,7 +212,6 @@ span {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        color: var(--clr-white);
         margin: 0vw 7vw;
         height: 100vh
     }
@@ -229,7 +228,6 @@ span {
     
     .profile {
         flex-direction: column;
-        background-color: var(--clr-blue);
         border-radius: 1.5vw;
         justify-content: flex-start;
         padding: 3vw;
@@ -284,12 +282,9 @@ span {
     }
     
     .section-container {
-        background-color: var(--clr-dark-blue);
         margin: 4.5vw 0vw 0vw 0vw;
         border-radius: 1.5vw;
         padding: 2vw;
-        cursor: pointer;
-        transition: var(--transition);
     } 
 
     .section-header {
@@ -319,16 +314,86 @@ span {
         margin: 2vw 0vw 0vw 0vw;
         align-items: flex-start;
     }
-    
-    .present {
-        opacity: 0.9;
-    }
-    
+     
     .present-time {
         font-size: 1.6em;
     }
     
     .past-time {
         font-size: 0.6em;
+    }
+}
+
+
+/* For screens >= 1440px */
+@media screen and (min-width: 1440px) {
+    h2 {
+        font-size: 2em;
+        margin: 0vw 0vw 2vw 0vw;
+    }
+    
+    .header {
+        border-radius: 1vw;
+    }
+    
+    .profile {
+        border-radius: 1vw;
+        padding: 3vw;
+    }
+    
+    .profile span {
+        font-size: 0.9em;
+    }
+    
+    .pfp {
+        margin: 0vw 0vw 2vw 0vw;
+    }
+    
+    .pfp img {
+        width: 6vw;
+        height: 6vw;
+        border: 0.3vw solid var(--clr-white);
+    }
+    
+    .timeframes {
+        margin: 1vw 0vw
+    }
+    
+    .timeframe {
+        padding: 1vw 3vw;
+        font-size: 1em;
+    }
+    
+    .section {
+        border-radius: 1vw 1vw 2vw 2vw;
+        background-position: 90% -1vw;
+    }
+    
+    .section-container {
+        margin: 4vw 0vw 0vw 0vw;
+        border-radius: 1vw;
+        padding: 2vw;
+    } 
+
+    .section-header {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .section-header span {
+        font-size: 1.2em
+    }
+    
+    .ellipses-icon {
+        align-items: center;
+        margin: 0vw;
+    } 
+
+    .present-time {
+        font-size: 2.5em;
+    }
+    
+    .past-time {
+        font-size: 1em;
     }
 }
